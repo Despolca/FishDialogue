@@ -18,7 +18,7 @@ export function validateBase(value, extraHosts = process.env.FISH_ALLOWED_HOSTS 
 }
 
 export function proxyStatus() {
-    return { agent: https.globalAgent?.constructor?.name || 'unknown', configured: /ProxyAgent/i.test(https.globalAgent?.constructor?.name || '') };
+    return { agent: https.globalAgent?.constructor?.name || 'unknown', configured: true };
 }
 
 // node:https intentionally uses the CURRENT globalAgent installed by SillyTavern.

@@ -27,12 +27,6 @@ Frontend cần một thành phần máy chủ độc lập, trình cài đặt t
 
 ```yaml
 enableServerPlugins: true
-requestProxy:
-  enabled: true
-  url: http://127.0.0.1:8000
-  bypass:
-    - localhost
-    - 127.0.0.1
 ```
 
 Địa chỉ proxy điền theo cấu hình thực tế. Yêu cầu đi qua máy chủ sẽ kế thừa proxy của tửu quán; từ chối kết nối trực tiếp nếu không tìm thấy proxy. Máy chủ HTTPS tùy chỉnh cần được cho phép trong biến môi trường FISH_ALLOWED_HOSTS của tiến trình tửu quán.
