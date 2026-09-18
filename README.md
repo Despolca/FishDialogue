@@ -29,7 +29,7 @@ Frontend cần một thành phần máy chủ độc lập, trình cài đặt t
 enableServerPlugins: true
 requestProxy:
   enabled: true
-  url: socks5://127.0.0.1:Cổng_tửu_quán
+  url: http://127.0.0.1:8000
   bypass:
     - localhost
     - 127.0.0.1
